@@ -5,34 +5,11 @@
   <meta charset="utf-8" />
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-  <script src="http://vjs.zencdn.net/5.11.9/video.js"></script>
-  <script>
-    videojs.options.flash.swf = "GrindPlayer.swf";
-  </script>
   <script src="overlay.js"></script>
 </head>
 <body>
-  <div class="load"></div>
-  <div id="cont" class="container hidden">
-    <div class="progress">
-		<div class="value">
-			<div class="load"></div>
-		</div>
-	</div>
-    <span id="Host" class="scroll textFormat">T<span id="text">V</span></span>
-    <span id="Time" class="scroll textFormat"></span>
-    <span id="Kills" class="scroll textFormat"></span>
-    <span id="Deaths" class="scroll textFormat"></span>
-    <span id="Objective" class="scroll textFormat"></span>
-	
-	<span class="host titleFormat">HOST</span>
-	<span class="time titleFormat">TIME</span>
-	<span class="objective titleFormat">OBJECTIVE</span>
-	<span class="kills titleFormat">KILLS</span>
-	<span class="deaths titleFormat">DEATHS</span>
-    <span class="info scroll textFormat"></span>
-	
-	<object type="application/x-shockwave-flash" id="player" data="GrindPlayer.swf" width="640" height="480" style="visibility: visible;">
+	<div style ="backdrop-filter: blur(10px); width: 200px; height: 200px;"></div>
+	<object type="application/x-shockwave-flash" id="player" data="GrindPlayer.swf" width="100%" height="100%" style="visibility: visible;">
 		<param name="allowFullScreen" value="true">
 		<param name="allowScriptAccess" value="always">
 		<param name="wmode" value="opaque">
@@ -40,6 +17,5 @@
 	</object>
 	
   </div>
-  <p id="Players" style="display: none;"></p>
 </body>
 </html>
